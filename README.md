@@ -4,9 +4,9 @@ OpenCV development container, backend TensorFlow.
 
 ### Feature
 
-- OpenCV 3.2.0
-- FFMpeg 2.8.11
-- OpenEXR 2.2.0
+- OpenCV 3.3.0
+- FFMpeg
+- OpenEXR
 
 ### Dependency
 

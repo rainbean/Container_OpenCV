@@ -10,11 +10,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# install extra library
-RUN pip3 --no-cache-dir install future imutils
-
 # install opencv-python binding with ffmpeg support
-RUN pip3 install https://bazel.blob.core.windows.net/opencv/opencv_python-3.3.0-cp35-cp35m-linux_x86_64.whl
+RUN pip3 --no-cache-dir install \
+       future imutils \
+       https://bazel.blob.core.windows.net/opencv/opencv_python-3.3.0-cp35-cp35m-linux_x86_64.whl
 
 # Copy sample notebooks.
 COPY notebooks /notebooks
